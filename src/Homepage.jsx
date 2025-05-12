@@ -37,7 +37,7 @@ const [isLoading, setIsLoading] = useState(false);
 //     setIsLoading(false); // Contains prediction result
 
 try {
-    const res = await fetch("https://10.210.227.249:10000", {
+    const res = await fetch("https://plant-disease-detection-nevl.onrender.com", {
       method: "POST",
       body: formData,
     });
