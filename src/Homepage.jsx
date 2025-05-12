@@ -25,7 +25,7 @@ const [isLoading, setIsLoading] = useState(false);
     const formData = new FormData();
     formData.append("file", img);
   
-//     const res = await fetch("http://127.0.0.1:5000/predict", {
+//     const res = await fetch("https://127.0.0.1:5000/predict", {
 //       method: "POST",
 //       body: formData,
 //     });
