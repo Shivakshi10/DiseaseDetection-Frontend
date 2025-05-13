@@ -81,13 +81,15 @@ return (
               
             
             <button className='submitButton' onClick={handleSubmit}> Submit</button>
-            {isLoading && <div className="resultname">Loading prediction...</div>}
+            {isLoading && <div className="loading">Loading prediction...</div>}
             </div>
           )}
           
           { Object.keys(data).length > 0 && (
-                <div className='Result'>
-                    <span className='resultname'>result : {data.class}</span>
+               <div className='Result'>
+                  
+                  <span className='resultname'> Plant Name -{data.class.plant} </span>
+                  <span className='resultname'> Disease - {data.class.disease}</span>
                 </div>
              )} 
         </div>
